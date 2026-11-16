@@ -1,0 +1,178 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #080b14;
+  color: #f5f7ff;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 24px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0 35px;
+  border-bottom: 1px solid #20283a;
+}
+
+.brand {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.brand-icon {
+  color: #9b7bff;
+  margin-right: 8px;
+}
+
+.brand b,
+.welcome h1 span {
+  color: #9b7bff;
+}
+
+.status {
+  color: #6ee7a8;
+  font-size: 13px;
+}
+
+.welcome {
+  padding: 65px 0 40px;
+}
+
+.eyebrow {
+  color: #a18aff;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.welcome h1 {
+  font-size: clamp(38px, 7vw, 65px);
+  line-height: 1.12;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  color: #9da8bc;
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+.upload-card {
+  background: #111827;
+  border: 1px solid #303b53;
+  border-radius: 20px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.upload-icon {
+  background: #292044;
+  color: #b39aff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  margin: 0 auto 20px;
+}
+
+.upload-card h2 {
+  margin-bottom: 12px;
+}
+
+.upload-card p {
+  color: #9da8bc;
+  margin-bottom: 20px;
+}
+
+.upload-button {
+  display: inline-block;
+  background: #8058ed;
+  color: white;
+  padding: 15px 28px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.formats {
+  margin-top: 22px;
+  font-size: 12px;
+}
+
+.file-name {
+  margin-top: 18px;
+  overflow-wrap: anywhere;
+}
+
+.features {
+  padding: 55px 0;
+}
+
+.features h2 {
+  margin-bottom: 25px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.feature-grid article {
+  background: #111827;
+  border: 1px solid #28334a;
+  border-radius: 14px;
+  padding: 22px;
+}
+
+.feature-grid article span {
+  color: #a18aff;
+  font-size: 24px;
+}
+
+.feature-grid h3 {
+  margin: 14px 0 9px;
+  font-size: 16px;
+}
+
+.feature-grid p {
+  color: #9da8bc;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+footer {
+  border-top: 1px solid #20283a;
+  padding: 25px 0;
+  color: #66738c;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+  .dashboard {
+    padding: 20px 16px;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome {
+    padding-top: 45px;
+  }
+}
